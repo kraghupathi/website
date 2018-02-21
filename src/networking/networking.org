@@ -1,0 +1,185 @@
+#+title:  Networking for beginners
+#+SETUPFILE: ../org-templates/level-1.org
+
+- This document about the basics of networking concepts 
+- Here I choose Cisco Packet Tracer tool developed by =Cisco Organization= to
+  understand more about networking formation, packet simulation and server configuration.
+* Network:
+- Network can be defined as a group of computers which are inter connected
+  together to exchange the data.
+- Sample network diagrame
+[[./network.png]]
+* Network Topology:
+- Network topology is the arrangement of the various elements (links, nodes, etc.) of a computer network. 
+  Essentially, it is the topological structure of a network and may be depicted physically or logically.
+ * EX := Bus Topology, Tree Topology, Ring Topology and Star Topology.
+* LAN(Local Area Network):
+- A LAN is a type of computer network in which networking facility is available in a small physical area (mostly in meters but very rarely in kilometers) probably in an office building, home and 
+  school etc. Each computer or device connected to the network is called as a node.
+** Uses of LAN:
+-  LAN is useful for sharing resources like files, printer service, games or other applications.
+** Examples of LAN:
+- =Vlead Network= is an example of a LAN.
+* WAN(Wired Area Network):
+- A wide area network, or WAN, occupies a very large area, such as an entire country or the entire world. A WAN can contain multiple smaller networks, such as LANs or MANs. 
+ * Ex := The Internet is the best-known example of a public WAN.
+* Internet Protocol (IP):
+- Internet Protocol is a unique address which is used to identify the
+  computer/machine on a network.
+- Which is used to identify the location of the computer in the world.
+* IPV4:
+- IPv4 stands for Internet Protocol Version 4. which uses 32-bits for address
+  space and this uses TCP/IP host addressing mechanism.
+- In which total address space is divided into 4 octets. Each octet value in
+  decimal is 0-255.
+ * Ex1 := 11000100.10101010.10101111.11010101
+ * Ex2 := 175.56.43.23
+- The above ip-address is in the dotted decimal number format. An ip address is in the format of 4 sets of decimal numbers separated by dots. The decimal number in each and every set is in the range 0 to 255. 
+  Each and every set is called octet. So, there are 4 octets in an ip address.
+** IP address classes:
+- IPV4 address space is divided into several categerios for efficiant use of total address sapce. 
+- Each class allows for a range of valid IP addresses, shown in the following table.
+** Public IP:
+- A public IP address is an IP address that can be accessed over the Internet. Like postal address used to deliver a postal mail to your home.
+- A public IP address is the globally unique IP address assigned to a computing device.
+ * Ex := 175.101.8.162
+** Private IP:
+- A private IP address is the address space allocated by InterNIC to allow organizations to create their own private network.
+ * Ex := 10.2.59.109
+** Static IP:
+- Static IP is a fixed ip,it will not change
+** Dynamic IP:
+- It is an IP address is which is assigned by the DHCP server over network and
+  it may change over time.
+* Network Classes:
+| CLASS A |   1.0.0.1-126.255.255.254 |  For Internet communication          |
+| CLASS B | 128.1.0.1-191.255.255.254 |              Same as class A         |
+| CLASS C | 192.0.1.1-223.255.254.254 |              Same as class A         |
+| CLASS D | 224.0.0.0-239.255.255.255 | Reserved for Multicasting            |
+| CLASS E | 240.0.0.0-254.255.255.254 | used for researching and experiments |
++ CLASS A 
+ - First 8 bits indicates Network
+ - Laster 24 bits indicates Host Address
++ CLASS B 
+ - First 16 bits indicates Network
+ - Laster 16 bits indicates Host Address
++ CLASS C 
+ - First 24 bits indicates Network
+ - Laster 8 bits indicates Host Addres
+* IPV6:
+- IPv6 stands for Internet Protocol Version 6. which uses 128-bits for address space and IPV6 denoted by eight groups of hexadecimal quartets separated by colons in between them.
+ * Ex := 2001:cdba:0000:0000:0000:0000:3257:9652
+* Port:
+- which specifies the process in the machine
+- Port values range from 0-65535
+* Port Numbers for given following Protocols:
+| SSH   |    22 |
+| HTTP  |    80 |
+| HTTPS |   443 |
+| FTP   | 20/21 |
+| SMTP  |    25 |
+| DNS   |    53 |
+| DHCP  |    67 |
+* Protocol:
+- A Protocol is a set of rules which governs the communication between two
+  computers which are connected by the network.
+ * Ex := IP, HTTP and FTP etc.
+** HTTP:
+- HTTP stands for Hypertext Transfer Protocol. Which is responsible for
+  loading/transfer the web data over internet.
+- All browsing communication will happens using =http= protocal only.
+- This protocal uses =80= protocal.
+ * Ex := A browser is an HTTP client because it sends requests to an HTTP
+   server (Web server), which then sends responses back to the client.  The
+   standard (and default) port for HTTP servers to listen on is 80.
+** FTP(File Transfer Protocol):
+- The File Transfer Protocol (FTP) is a standard network protocol, which is
+  used to transfer computer files between a client and server on a computer
+  network.
+- This will use port number 20/21
+
+*Ex:-* Python File Sharing Server.
+** SMTP(Simple Mail Transfer Protocol):
+- SMTP stands for Simple Mail Transfer Protocol, which is generally used to
+  send messages from a mail client to a mail server.
+- This will use 25 port number. 
+** TCP/IP (Transmission Control Protocol):
+- TCP/IP is the basic communication language or protocol of the Internet. 
+- It can also be used as a communications protocol in a private network
+* VPN(Virtual Private Network):
+- A Virtual Private Network (VPN) is a network technology that creates a secure network connection over a public network such as the Internet or a 
+  private network owned by a service provider. And VPN can connect multiple sites over a large distance just like a Wide Area Network (WAN).
+* Gateway:
+- A gateway is a hardware device that acts as a "gate" between two networks. It
+  may be a router, firewall, server, or other device that enables traffic to
+  flow in and out of the network.
+- A router is an example of a gateway device. A router is a device that does
+  routing and decides where packets are sent to based on its IP address.
+* Netmask:
+- A netmask is a 32-bit number which is used to define how many bit of an IP
+  address are related to hosts and network
+- Netmask is used to define subnets and specify the network's available hosts.
+- Netmask is used to identify the network address using binary operation with
+  an ip and netmask.
+| CLASS A |     255.0.0.0 |
+| CLASS B |   255.255.0.0 |
+| CLASS C | 255.255.255.0 |
+* PING:
+- Ping is a networking utility program. Which is used for verification of IP
+  connectivity to the remote machine. This uses ICMP packets.
+- To check connection between your machine to google.com server we use below command.
+#+begin_example
+ping www.google.com
+#+end_example
+* Apache Web server:
+- Apache Web Server is an open source Web server for creation, deployment and management web applications.
+- Which is designed to host one or more Web applications,
+- It is also widely used by Web server many companies uses this server to host their internal web applications by configuring shared/virtual hosting,
+  as by default, Apache Web Server supports and distinguishes between different hosts that reside on the same machine.
++ To install Apache-server on Linux, use the following command
+ * On Ubuntu/Debian.
+#+begin_example
+sudo apt-get install apache2
+#+end_example
+ * On RHEL/CENTOS
+#+begin_example
+yum install httpd
+#+end_example
+** How to host a website on Apache Server?:
+1) To start the apache server, use the following command:
+ * On Ubuntu/Debian.
+#+begin_example
+service apache2 start
+#+end_example
+ * On RHEL/CENTOS
+#+begin_example
+service httpd start
+#+end_example
+2) To restart the server
+ * On Ubuntu/Debian.
+#+begin_example
+service apache2 restart
+#+end_example
+ * On RHEL/CENTOS
+#+begin_example
+service httpd restart
+#+end_example
+3) Open web browser and type =localhost= or =127.0.0.1= then, browser displays
+   the default apache page. 
+4) Create a sample html, js and css files and place them in a folder.
+ 
+5) Move the contents of the folder to  =/var/www/html= or =/var/www/=. This is
+   the default web host server for apache server.
+6) Open browser and type =localhost/<file name> or 127.0.0.1/<file name>.
+#+begin_example
+localhost/example.html
+#+end_example
+7) To stop the apache server, use the following command:
+ * On Ubuntu/Debian.
+#+begin_example
+service apache2 stop
+#+end_example
+ * On RHEL/CENTOS
+#+begin_example
+service httpd stop
+#+end_example

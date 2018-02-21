@@ -1,0 +1,67 @@
+#+TITLE: Sitemap for project top
+
+   + about
+     + [[file:about/index.org][User Manuals]]
+   + design
+     + [[file:design/index.org][Design of Virtual Labs Development]]
+   + git
+     + [[file:git/backend-web-developer.org][Backend Web Developer]]
+     + [[file:git/digital-classroom.org][Digital Classroom]]
+     + [[file:git/frontend-web-developer.org][Frontend Web Developer]]
+     + [[file:git/qa-automation-engineer.org][QA Automation Engineer]]
+     + [[file:git/research-assistant.org][Research Assistant]]
+     + [[file:git/systems-engineer.org][Systems Engineer]]
+     + [[file:git/content-writer.org][Technical Content Writer]]
+     + [[file:git/technical-project-manager.org][Technical Project Manager]]
+     + [[file:git/technical-team-leader.org][Technical Team Lead]]
+     + [[file:git/index.org][We're Hiring]]
+   + gsoc-2016
+     + [[file:gsoc-2016/index.org][GSOC 2016]]
+     + [[file:gsoc-2016/template.org][GSoC 2016 Student Application Template]]
+     + [[file:gsoc-2016/student-instructions.org][GSoC 2016 Student Instructions]]
+     + [[file:gsoc-2016/ideas-list.org][Ideas List @ Virtual Labs]]
+   + home
+     + [[file:home/index.org][About Virtual Labs Development]]
+   + internship-2016
+     + [[file:internship-2016/ideas-list.org][Ideas List @ Virtual Labs]]
+     + [[file:internship-2016/interns.org][Interns]]
+     + [[file:internship-2016/index.org][Internship 2016]]
+     + [[file:internship-2016/mentors.org][Mentors]]
+     + [[file:internship-2016/selected-interns.org][Selected Interns]]
+   + internship-2017
+     + [[file:internship-2017/ideas-list.org][Ideas List @ Virtual Labs]]
+     + [[file:internship-2017/interns.org][Interns]]
+     + [[file:internship-2017/index.org][Internship 2017]]
+     + [[file:internship-2017/mentors.org][Mentors]]
+     + [[file:internship-2017/selected-interns.org][Selected Interns]]
+   + linux
+     + [[file:linux/auto-deployment.org][Auto Deployment Service]]
+     + [[file:linux/dataservice.org][Lab Development]]
+     + [[file:linux/index.org][Platform]]
+     + [[file:linux/experiment-as-a-service.org][Platform to support Experiment as a Service]]
+     + [[file:linux/openedx-platform.org][Porting of Virtual Labs to Open edX platform]]
+   + networking
+     + [[file:networking/channels.org][Communication Channels]]
+     + [[file:networking/index.org][Community]]
+     + [[file:networking/contributing.org][Contributing]]
+     + [[file:networking/github-repositories.org][Directory of GitHub Repositories]]
+     + [[file:networking/licensing.org][Licensing]]
+     + [[file:networking/processes.org][Processes]]
+     + [[file:networking/portable-virtual-labs.org][Virtual Labs on Portable Media]]
+   + org-templates
+     + [[file:org-templates/level-0.org][level-0]]
+     + [[file:org-templates/level-1.org][level-1]]
+   + others
+     + [[file:others/college_cloud_workshops.org][College Cloud Workshops]]
+     + [[file:others/online_workshops.org][Online Workshops]]
+     + [[file:others/index.org][Workshops]]
+   + scripting
+     + [[file:scripting/index.org][Research Projects @  Virtual Labs]]
+     + [[file:scripting/ideas-list.org][Virtual Labs Project ideas]]
+   + virtualization
+     + [[file:virtualization/integration.org][Integration Process]]
+     + [[file:virtualization/development.org][Lab Development]]
+     + [[file:virtualization/lab-structure.org][Lab Structure]]
+     + [[file:virtualization/index.org][Labs]]
+     + [[file:virtualization/uniform-ui.org][Uniform UI]]
+   + [[file:index.org][About Virtual Labs Development]]

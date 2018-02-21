@@ -1,0 +1,18 @@
+#+title:  About
+#+SETUPFILE: ../org-templates/level-1.org
+
+About
+
+Hello,
+
+Welcome to my blog!
+
+I am Raghupathi from Hyderabad. India currently working at IIIT-H.India . I have done
+
+my Bachelor’s in Computer Science.
+
+I am an avid Linux enthusiast :) and  always support the idea of open source development.
+
+So,lets open the door of Linux and Opensource.
+
+Feel free-Use free-Distribute free.
